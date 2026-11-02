@@ -1,8 +1,8 @@
 document.querySelectorAll('details').forEach((detail) => {
-  const plus = detail.querySelector('.plus');
-  if (!plus) return;
+  const icon = detail.querySelector('summary span');
+  if (!icon) return;
   detail.addEventListener('toggle', () => {
-    plus.textContent = detail.open ? '−' : '+';
+    icon.textContent = detail.open ? '−' : '+';
   });
 });
 
